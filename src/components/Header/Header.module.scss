@@ -1,0 +1,102 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+$border__responsive: solid 1px black;
+
+.header__container {
+    background-color: $background-main-color;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0px 0px 0px;
+    height: 65px;
+    gap: 20%;
+    position: relative;
+    z-index: 10;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        .logo__content {
+            margin: 0;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            padding: 6px 20px 0px 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: $title__font__family;
+        }
+    }
+
+    .nav {
+        display: inline-flex;
+        column-gap: 1px;
+    }
+
+    .hambuger__open {
+        display: none;
+    }
+
+    .hambuger__open, .hambuger__close {
+        width: $clickable_size;
+        height: $clickable_size;
+        align-self: center;
+    }
+
+    .hambuger__close {
+        align-self: flex-end;
+        margin-right: 20px;
+        display: block;
+    }
+
+    .hambuger__menu {
+        position: fixed;
+        right: -100vw;
+        top: 0;
+        z-index: 11;
+        height: 100%;
+        min-width: 100px;
+        max-width: 400px;
+        width: 35%;
+        background-color: $background-main-color;
+        border-left: $border__responsive;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding-top: 10px;
+        transition: all 400ms;
+
+        .hambuger__nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            column-gap: 36px;
+
+            a {
+                height: $clickable_size;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $first__break) {
+    .header__container {
+        border-bottom: $border__responsive;
+        padding: .25rem 2.5% .25rem 2.5%;
+        justify-content: space-between;
+        gap: 0;
+
+        .nav {
+            display: none;
+        }
+
+        .hambuger__open {
+            display: block;
+        }
+
+        .hambuguer__menu-active {
+            transition: all 400ms;
+            right: 0;
+        }
+    }
+}

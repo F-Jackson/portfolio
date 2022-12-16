@@ -1,0 +1,47 @@
+@import 'styles/variables';
+
+.entrance__container {
+    align-self: normal;
+    padding: 2rem 5% 2rem 5%;
+
+    .entranceText {
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+    
+        .title {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            height: 35px;
+            font-size: $secundary__title__size;
+
+            &::after {
+                content: "";
+                background-color: black;
+                position: absolute;
+                top: 90%;
+                left: 0;
+                height: 3px;
+                animation: fill_title .5s;
+                animation-fill-mode: forwards;
+            }
+        }
+    
+        .text {
+            margin: 0;
+        }
+    }
+}
+
+@keyframes fill_title {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

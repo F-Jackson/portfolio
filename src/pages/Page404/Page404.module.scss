@@ -1,0 +1,36 @@
+@import 'styles/variables';
+
+.Page404__container {
+    min-height: 100vh;
+    padding: 1.25rem 2.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $background-main-color;
+
+    .Page404__text__container {
+        text-align: center;
+
+        .Page404__text {
+            font-size: 30px;
+        }
+
+        .Page404__number {
+            font-size: 70px;
+            color: white;
+            background-color: black;
+        }
+    }
+
+    .Page404__button {
+        background-color: $orange-var-color;
+        color: white;
+        border: 0;
+        height: $clickable_size;
+        font-weight: $link__weight;
+        font-size: $secundary__title__size;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+}

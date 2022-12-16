@@ -1,0 +1,40 @@
+@import 'styles/variables';
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px 0px 20px;
+    font-family: $normal__font__family;
+    border: none;
+    font-size: 17px;
+    font-weight: $link__weight;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $orange-var-color;
+        width: 100%;
+        height: 0;
+        z-index: -1;
+    }
+    
+    &:hover {
+        color: white;
+        transition: all 25ms;
+        &::before {
+            height: 100%;
+            transition: all 0.25s;
+        }
+    }
+}
+
+.link-active {
+    color: white;
+    &::before {
+        height: 100%;
+    }
+}

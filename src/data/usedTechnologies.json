@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Front-End",
+        "technologies": [
+            "React-Js",
+            "Typescript",
+            "Sass"
+        ],
+        "img": "assets/img/front-end.webp"
+    },
+    {
+        "title": "Back-End",
+        "technologies": [
+            "Django",
+            "Python",
+            "Postgre-Sql"
+        ],
+        "img": "assets/img/back-end.webp"
+    },
+    {
+        "title": "Artificial-Inteligence",
+        "technologies": [
+            "Numpy",
+            "Pandas",
+            "SkLearn",
+            "Scipy",
+            "Seaborn",
+            "Spacy",
+            "Gensim",
+            "Word2Vec"
+        ],
+        "img": "assets/img/machine-learning.webp"
+    }
+]

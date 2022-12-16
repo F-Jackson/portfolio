@@ -1,0 +1,18 @@
+.texts__input, .textarea__input {
+    outline: none;
+    padding: .25rem;
+    box-shadow: none;
+    border: none;
+    overflow:auto;
+    filter: none;
+
+    &:focus {
+        filter: none;
+    }
+}
+
+.textarea__input {
+    resize: none;
+    border: solid black 1px;
+    padding: .5rem;
+}

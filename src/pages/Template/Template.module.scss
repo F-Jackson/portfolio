@@ -1,0 +1,19 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.main__container {
+    background-color: $background-main-color;
+    min-height: 100vh;
+    padding: .5rem 2.25% 1.25rem 2.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $normal__font__family;
+    font-size: 16px;
+}
+
+@media screen and (max-width: $first__break) {
+    .main__container {
+        min-height: 100vh;
+    }
+}

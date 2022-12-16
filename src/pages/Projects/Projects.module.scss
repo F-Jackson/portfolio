@@ -1,0 +1,19 @@
+@import 'styles/breakpoints';
+
+.projects__container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: normal;
+    height: auto;
+    justify-content: space-evenly;
+
+    .projects {
+        width: 100%;
+        display: flex;
+        row-gap: 3rem;
+        flex-direction: column;
+    }
+}

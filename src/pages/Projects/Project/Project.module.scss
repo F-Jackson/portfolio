@@ -1,0 +1,96 @@
+@import "styles/variables";
+@import 'styles/breakpoints';
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1600px;
+    justify-content: center;
+    margin: 0 auto;
+    row-gap: 0.25em;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+
+    .project__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        z-index: 2;
+        flex-grow: 2;
+        row-gap: 5em;
+        &::before {
+            position: absolute;
+            z-index: 0;
+            content: "";
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            background-color: black;
+        }
+    
+        .project__title, .project__text {
+            background-color: white;
+            z-index: 1;
+            position: relative;
+            padding: 0.5em;
+            max-width: 500px;
+            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+    
+        .project__text {
+            min-height: 144px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            p {
+                margin-top: 0;
+                margin-bottom: 1em;
+            }
+    
+            a {
+                color: $orange-var-color;
+                font-weight: $link__weight;
+            }
+        }
+
+        .project__title {
+            font-size: $secundary__title__size;
+        }
+    }
+
+    .project__img {
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width: $second__break) {
+    .project {
+    
+        .project__description {
+            row-gap: 1em;
+            &::before {
+                top: 5%;
+                height: 90%;
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translate(-20000px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}

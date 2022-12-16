@@ -1,0 +1,73 @@
+@import "styles/variables";
+
+.footer {
+    background-color: black;
+    padding: 1.25rem 10% 0.75rem 10%;
+    color: white;
+    text-align: center;
+    font-family: $normal__font__family;
+
+    .secondContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 30px;
+        row-gap: 33px;
+    
+        .social {
+            display: flex;
+            column-gap: 10px;
+
+            .icons {
+                width: $clickable_size;
+                height: $clickable_size;
+                cursor: pointer;
+            }
+        }
+
+        .sendEmail {
+            height: $clickable_size;
+            display: flex;
+            column-gap: 0;
+            width: 100%;
+            max-width: 230px;
+
+            input {
+                padding: 0.25rem;
+                border: none;
+                box-shadow: none;
+                border-radius: 4px 0 0 4px;
+                width: 80%;
+
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+
+            button {
+                width: 20%;
+                min-width: 41px;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+
+        .copyright__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+
+            .copyright__icon {
+                width: 20%;
+                height: auto;
+            }
+        }
+    }
+    span {
+        text-align: center;
+        height: auto;
+    }
+}

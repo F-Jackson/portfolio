@@ -1,0 +1,52 @@
+@import "styles/variables";
+
+.button {
+    background-color: #a14e22;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: $link__weight;
+    min-height: $clickable_size;
+    width: 100%;
+
+    .buttonIcon {
+        height: 100%;
+        width: 100%;
+        max-width: $clickable_size;
+        color: black;
+    }
+
+    .buttonIcon-sending {
+        animation: spin 2s cubic-bezier(.12,.71,.74,.12) infinite;
+    }
+
+    &-active {
+        background-color: $orange-var-color;
+        cursor: pointer;
+    }
+
+    &-error {
+        background-color: #af2d2d;
+    }
+
+    &-sucess {
+        background-color: #1c8837;
+    }
+
+    &-button-sending {
+        background-color: #bfc218;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

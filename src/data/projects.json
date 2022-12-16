@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "img": "assets/img/spotify-ai-image.png",
+        "title": "Spotify-Ai",
+        "description": "A Project where you can register to create your own music libraries and be recommended with various songs of your interest. Django was used for the backend in which I made a jwt token for user authentication and the backend itself has authentication methods for the given fields for better application security. In the Front End, I used React with typescript and axios to integrate with the api. The Database used was modified to generate seven classes for the songs based on things like the tempo of the beat, thus having a better method of recommendations beyond just the genre of each song.",
+        "link": "https://spotify-ai-frontend-cb39i4imf-jackson-fernandes.vercel.app/"
+    },
+    {
+        "id": 1,
+        "img": "assets/img/webpage.webp",
+        "title": "Coming soon",
+        "description": "Building Project....",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "img": "assets/img/webpage.webp",
+        "title": "Coming soon",
+        "description": "Building Project....",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "img": "assets/img/webpage.webp",
+        "title": "Coming soon",
+        "description": "Building Project....",
+        "link": "#"
+    }
+]
